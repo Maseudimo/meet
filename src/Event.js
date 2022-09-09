@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+
+
 export class Event extends Component {
   toggleEventDetails = () => {
     this.setState({ show: !this.state.show });
@@ -26,6 +29,7 @@ export class Event extends Component {
               >
                 See details on Google Calendar
               </a>
+              <p className="event-description">{event.description}</p>
             </>
           )}
           {!this.state.show ? (

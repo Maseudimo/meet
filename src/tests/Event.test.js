@@ -69,10 +69,12 @@ describe('<Event /> component', () => {
     expect(EventWrapper.state('show')).toBe(false);
   });
 
-  test('render when event is expanded after click collapse event details', () => {
+  test('render when event is expanded after click hide event details', () => {
     EventWrapper.setState({
       show: false
     });
+
     expect(EventWrapper.find('.event-description')).toHaveLength(0);
+    
   });
 });
